@@ -1,0 +1,22 @@
+{  
+"log": "an_log",  
+"web": "an_web",
+"view": "an_view",  
+"controller": "an_controller",
+"mime": "an_mime",
+"session": "an_session",
+"db": "database", 
+"events": "events", 
+"tile": "tile",
+"user": "user",
+"orgunits": "orgunits",
+"organization": "organization",
+"role": "role",
+"access": "access",
+"image": "image",
+"apps": "apps",
+"location": "location",
+"general": "general",
+"public": "public",
+"demo": "demo"
+}

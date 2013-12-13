@@ -1,0 +1,27 @@
+.page_container{ width: 1200px; border:0px solid; border-color:green; 
+  font-family: Verdana, Geneva, sans-serif; color: #354B5E;}
+
+.label{font-weight:bold;}
+
+.page_header{ position: relative; border:0px solid; width: 100%; height: 95px;
+  background-color: #DCDDD8; }
+
+.header_logo{ position: relative; left: 50px; top: 10px; }
+
+.header_menu{ position: relative; left: 150px; bottom: 15px; }
+
+.form_field { margin-top: 5px; margin-bottom: 5px; }
+
+.header_menu_btn { background-color: #354B5E; font-size: 15px; color: #DCDDD8;
+    text-decoration: none; cursor: poiner; border:none; }
+
+.header_menu_btn:hover { border: none; background:#D74B4B; box-shadow: 0px 0px 1px #777; }
+
+.btn { background-color: #475F77; font-size: 15px; color: #DCDDD8; border-radius: 5px;
+    text-decoration: none; cursor: poiner; border:none; }
+
+.btn:hover { border: none; background:#354B5E; box-shadow: 0px 0px 1px #777; }
+
+.page_block{background-color: #DCDDD8; border-radius: 10px; box-shadow: 0px 0px 3px #777; }
+
+.text_box{ border-radius: 5px;}

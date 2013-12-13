@@ -1,0 +1,5 @@
+{  
+"dbname": "tilist-users",
+"collections": { "role" : "role" },
+"views": { "test" : "roletest.html" }
+}

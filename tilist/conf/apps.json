@@ -1,0 +1,5 @@
+{  
+"dbname": "tilist-core",
+"collections": { "apps" : "apps" },
+"imgfolderpath": "/public/img/apps/{0}/"
+}

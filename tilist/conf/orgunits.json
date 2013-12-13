@@ -1,0 +1,5 @@
+{  
+"dbname": "tilist-core",
+"collections": { "orgunits" : "orgunits" },
+"views": { "test" : "orgunitstest.html" }
+}

@@ -1,0 +1,22 @@
+.tiles_add { border: 0px solid; margin-top: 10px; width: 900px; 
+  padding-left: 25px;padding-top: 20px; height: 50px; }
+.tiles_list{ border: 0px solid; width: 265px; position: absolute; top: 110px; left: 950px;height: 680px;}
+.tiles_list_search{position: relative; top: 5px; padding-left: 7px;padding-right: 8px;}
+.search_box{width:100%; }
+.tiles_list_show{position: relative; top: 20px; padding-top: 10px;height: 620px; overflow-y:auto;overflow-x:hidden;}
+.tiles_list_single{margin-left: 7px; margin-right: 5px; margin-bottom: 5px; width: 250px; }
+.tile_list_art{width: 240px; height: 98px; margin-top: 8px; margin-left: 5px;}
+.tile_list_title{margin-top: 5px; margin-left: 5px; font-size: 12px;}
+.tile_list_author{margin-top: 5px; margin-left: 5px; font-size: 10px;}
+.tile_list_date{position: relative; top: -12px; left: 135px; font-size: 10px;}
+.tiles_head{position: absolute; top: 115px; width: 900px; height: 120px; padding-top: 10px;padding-left: 25px;}
+.tile_form{margin-top: 10px;}
+.tile_title{width: 400px;}
+.tile_art{width: 160px; height: 65px; border: 0px solid; position: relative; top: -35px; left: 700px}
+.tile_art_img{width: 160px; height: 65px; position: relative; top: -27px;}
+.tile_art_btn{opacity: 0.7px; position: relative; top: 20px; left: 40px;z-index: 1}
+.tile_form_btns{position: relative; top: -20px; left: 750px;}
+.content_widget_btns{position: relative; top: -45px; width: 500px; border: 0px solid;}
+.tile_content{display: none;}
+.tile_url{display: none;}
+

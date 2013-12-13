@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Users Module</title>
+</head>
+<body>
+<header>
+    <h2 style="text-align:center;">Users Module</h2>
+</header>
+<section>
+    <form style="text-align:center" name="userform" action="http://tilist.nodeville.net/users/save" method="post" accept-charset="">
+        <section>
+        	<div style="font-size:15px"><strong>Save Users</strong></div>      
+        	<label for="id" style="margin-left:18px">_id</label>        	
+            <input type="text" name="_id" value="0"></br>                   
+            <label for="fullname" style="margin-right:2px" >FullName</label>
+            <input type="text" name="fullname"  style="margin-right:2% " placeholder="fullname"></br>
+            <label for="email" style="margin-right:2px" >Email</label>
+            <input type="text" name="email"  style="margin-right:2% " placeholder="email"></br>
+            <label for="password">Password</label>
+            <input type="password" name="password"  style="margin-right:2% " placeholder="password"></br>
+            <label for="roleid">Organizations</label>
+            <input type="text" name="organizations" style="margin-right:10px" placeholder="organizations"></br>    
+            <input type="submit" style="margin-left:3%;background-color:indianred" value="save">
+        </section>
+    </form>
+    <form style="text-align:center" name="userform" action="http://tilist.nodeville.net/users/get" method="post" accept-charset="">
+        <section>
+            <div style="font-size:15px"><strong>Get By Id</strong></div>
+            <label for="_id" style="margin-left:17px ">_id</label>
+            <input type="text" name="_id" placeholder="enter _id" ></br>
+            <input type="submit" style="margin-left:3%;background-color:indianred" value="select">
+        </section>
+    </form>   
+    <form style="text-align:center" name="userform" action="http://tilist.nodeville.net/users/remove" method="post" accept-charset="">
+        <section>
+            <div style="font-size:15px"><strong>Delete By Id</strong></div>
+            <label for="_id" style="margin-left:17px ">_id</label>
+            <input type="text" name="_id" placeholder="enter _id" ></br>
+            <input type="submit" style="margin-left:3%;background-color:indianred" value="delete">
+        </section>
+    </form>   
+</section>
+<footer style="text-align:center">
+    <h6>Copyright Matsya Infomatics Pvt Ltd.All rights reserved </h6>
+</footer>
+</body>
+</html>

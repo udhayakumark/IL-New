@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+<style>
+   	
+   	
+:focus {
+    outline: medium none;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#top_bit {
+    margin: 0 auto;
+    width: 760px;
+}
+form {
+    margin: 20px auto;
+    width: 300px;
+}
+p {
+    line-height: 1.6;
+}
+input, textarea {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    min-height: 30px;
+    transition: all 0.5s ease-in-out 0s;
+    width: 300px;
+}
+textarea {
+    min-height: 200px;
+}
+
+input:not(:focus), textarea:not(:focus) {
+    opacity: 0.5;
+}
+input:required, textarea:required {
+    background: url() no-repeat scroll 280px 7px transparent;
+}
+input:valid, textarea:valid {
+    background: url() no-repeat scroll 280px 5px transparent;
+}
+input:focus:invalid, textarea:focus:invalid {
+    background: url() no-repeat scroll 280px 7px transparent;
+}
+input[type="submit"] {
+    background: none repeat scroll 0 0 transparent;
+    opacity: 1;
+    padding: 10px;
+}
+
+   </style>
+</head>
+<body>
+<header>
+    <h2 style="text-align:center;">Events</h2>
+</header>
+<section>
+   <form action="http://tilist.nodeville.net/events/save" method="post"> 
+   	
+     	<label for="id">Id:</label> 
+		<input name="_id" placeholder="id" type="text"/>
+		
+		<label for="name">Name:</label> 
+		<input name="name" required="" placeholder="Name" type="text"/>
+				
+		<label for="startdate">Start Date:</label> 
+		<input name="startdate" required="" placeholder="Start Date" type="date">
+		
+		<label for="enddate">End Date:</label> 
+		<input name="enddate" required="" placeholder="End Date" type="date">
+
+		<label for="notes">Notes:</label> 
+		<textarea name="notes" ></textarea>
+		
+		<label for="notes">TileId</label>
+                <input type="text" name="tileid" style="margin-right:1%"></br> 
+	
+		<input value="Save" type="submit">
+			</form>  
+			
+			</br>
+    <form  name="orgunitsform" action="http://tilist.nodeville.net/events/get" method="post" accept-charset="">
+                <section>
+                     <div style="text-align: center;font-size: 20px;margin-left: 40px;font-weight: bold">Get Events</div>                   
+                     <label  for="id">Id:</label>
+                     <input type="text" name="_id" placeholder="Enter Name">
+                     </br>
+                     <input id="get" value="Get" type="submit">
+                </section>
+    </form>
+   </br>
+    <form  name="orgunitsform" action="http://tilist.nodeville.net/events/remove" method="post" accept-charset="">
+                <section>
+                    <div style="text-align: center;font-size: 20px;margin-left: 40px;font-weight: bold">Remove Events</div>
+                     <label  for="id">Id:</label>
+                    <input type="text" name="_id" placeholder="Enter Name" value="0" >
+                   </br>
+                   <input id="remove" value="Remove" type="submit">
+           </section>
+    </form> 
+</section>
+<footer style="text-align:center">
+    <h6>Copyright Matsya Infomatics Pvt Ltd.All rights reserved </h6>
+</footer>
+</body>
+</html>

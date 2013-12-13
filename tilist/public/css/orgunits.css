@@ -1,0 +1,206 @@
+﻿
+.x-grid-row .x-tree-icon-leaf
+{
+	background-image: url('../img/icons/root.gif');
+	width: 16px;
+	height: 20px;
+}
+
+.add-icon
+{
+	background-image: url('../img/icons/add-icon.png');
+	width: 16px;
+	height: 15px;
+}
+
+.remove-icon
+{
+	background-image: url('../img/icons/delete-icon.png');
+	width: 16px;
+	height: 15px;
+}
+
+.reload-icon
+{
+	background-image: url('../img/icons/reload-icon.png');
+	width: 16px;
+	height: 15px;
+}
+
+.sub-add-icon
+{
+	background-image: url('../img/icons/sununitAdd-icon.png');
+	width: 16px;
+	height: 15px;
+}
+
+#login_user .x-form-field, #login_password .x-form-field
+{
+	font-size: 20px;
+}
+
+#remember_me .x-form-cb-label
+{
+	font-size: 11px;
+	color: #4d4d4d;
+}
+
+#login_button .x-btn-inner
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #6666A2;
+}
+
+.bin-icon
+{
+	background-image: url('../img/icons/recycle_bin_icon.png');
+	background-repeat: no-repeat;
+	width: 26px;
+	height: 26px;
+}
+
+.logout-icon
+{
+	background-image: url('../img/icons/logout-icon.png');
+	width: 16px;
+	height: 15px;
+}
+
+.close-icon
+{
+	background-image: url('../img/icons/close-icon.png');
+	width: 16px;
+	height: 15px;
+}
+
+.assign-icon
+{
+	background-image: url('../img/icons/assign-icon.png');
+	width: 16px;
+	height: 16px;
+}
+
+.info-icon
+{
+	background-image: url('../img/icons/info.png');
+	background-repeat: no-repeat;
+	width: 26px;
+	height: 26px;
+}
+
+.div-content
+{
+	width: 600px;
+	height: 450px;
+	float: left;
+}
+
+.div-content-visible
+{
+	width: 600px;
+	height: 450px;
+}
+
+.div-mid-visible
+{
+	width: 25px;
+	float: left;
+}
+
+.div-mid-invisible
+{
+	display: none;
+	visibility: hidden;
+}
+
+.div-orgs-visible
+{
+	width: 500px;
+	height: 450px;
+	float: left;
+}
+
+.div-orgs-invisible
+{
+	display: none;
+	visibility: hidden;
+}
+
+
+.div-header
+{
+	content: ".";
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 100%;
+}
+
+.div-content
+{
+	display: inline;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.users
+{
+	width: 560px;
+	height: 450px;
+	float: left;
+}
+
+.orgs-users
+{
+	width: 500px;
+	height: 450px;
+	float: left;
+}
+
+.org-content
+{
+	width: 900px; 
+	margin: 1%; 
+	height: 240px;
+	padding-left:110px;
+}
+
+.orgs-roles
+{   
+	width: 355px; 
+	float: left;
+	height: 230px;
+}
+
+.orgs-access
+{
+	float: left; 
+	width: 355px; 
+	height: 230px;	
+}
+
+.organizations
+{
+	width: 750px;
+	height: 450px;
+	float: left;
+}
+
+.center-align
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.password
+{
+    width: 370px;
+    height: 200px;
+    padding-top: 80px;
+}
+

@@ -1,0 +1,5 @@
+{  
+"dbname": "tilist-users",
+"collections": { "access" : "access" },
+"views": { "test" : "accesstest.html" }
+}

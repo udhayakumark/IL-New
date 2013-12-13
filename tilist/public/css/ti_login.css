@@ -1,0 +1,15 @@
+.login_container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  width: 300px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border:0px solid;
+  border-radius: 10px;
+  background-color:#365259;
+}

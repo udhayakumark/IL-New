@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+		$(document).ready(function () {
+		  
+		  $('#loginform').submit(function (e) {
+			e.preventDefault();
+			var postData = $(this).serializeArray();
+			var action = $(this).attr('action');
+			var user = {};	
+						
+			$.each(postData, function(i, field ) {
+			  eval('user.'+ field.name + '= "' + field.value + '";');
+			});
+			
+			var post = {};
+			post.form_data = JSON.stringify(user);
+			
+			$.ajax({
+			    type: 'POST',
+				url: action,
+				data: post,
+				dataType: 'json',
+				success: function (result, status, xhr) {
+						alert(JSON.stringify(result));
+			        }
+			    });
+		  	});
+		});
+   </script>
+</head>
+<body>
+<header>
+        <h1 style="text-align:center;">Welcome to Tilist</h1>
+</header>
+<section>
+    <form style="text-align:center" id="loginform" name="loginform" action="http://tilist.nodeville.net/user/login" method="post">
+                <section>
+                    <div style="text-align:center;font-size:21px ">Login</div>
+                    <label style="margin-left:2%" for="email">Email</label>
+                    <input type="email" name="email" required><br/>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" required><br/>
+                    <input type="submit" style="margin-left:12%;" value="Login">
+                 </section>
+    </form>
+</section>
+<footer style="text-align:center">
+        <h6>Copyright Matsya Infomatics Pvt Ltd.All rights reserved </h6>
+</footer>
+</body>
+</html>
+

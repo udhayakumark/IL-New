@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Interactive Life</title>
+    <link href="/css/layout.css" rel="stylesheet" type="text/css" />
+    <script src="/js/com/jquery.js" type="text/javascript"></script>
+    <script src="/js/com/extjs/ext-all.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#login').submit(function (e) {
+                e.preventDefault();
+                var postData = $(this).serializeArray();
+		        var action = $(this).attr('action');
+
+                $.ajax({
+                    type: 'POST',
+                    url: action,
+                    data: postData,
+                    dataType: 'json',
+                    success: function (result, status, xhr) {
+                    	if(result.length > 0)
+                    	{
+					       var myLocalStore = Ext.state.LocalStorageProvider.create();
+                           myLocalStore.set('name', result[0].fullname);
+                           myLocalStore.set('email', result[0].email);
+                           myLocalStore.set('password', result[0].password);
+                           myLocalStore.set('organizations', result[0].organizations);
+                           myLocalStore.set('_id', result[0]._id);
+                           if (result[0].organizations != "" || result[0].fullname == "admin") {
+                             window.location = "./admin.html";
+                            }
+                            else{
+                            	Ext.Msg.alert('No Organizations Assigned to this User!! Unable to Login');    	
+                            }
+						}
+						else
+						{
+							alert('Invalid User !');
+						}
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="dv-logo-image">
+                <img alt="" src="/img/ti_logo.png" />
+            </div>
+            <div class="dv-title">
+                <h1>
+                    Interactive Life</h1>
+            </div>
+        </div>
+        <div class="dv-selected">
+        </div>
+        <div id="content">
+           <div class="form-bg">
+			<form id="login" action=http://tilist.nodeville.net/users/logeduser" method="post">
+				<h2>Admin</h2>
+				<p><input type="text" id="email" class="login-input" name="email" placeholder="Username" /></p>
+				<p><input type="password" id="password" class="login-input" name="password" placeholder="Password" /></p>
+				<div class="btnSubmit">
+				<button type="submit" id="btnLogin"></button>
+				</div>
+			</form>
+		</div>
+        </div>
+        <div id="footer">
+            <p>
+                &copy Copyright Quu Inc. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

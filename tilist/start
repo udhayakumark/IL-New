@@ -1,0 +1,2 @@
+apppath=/apps/tilist
+forever start --minUptime 10 -l $apppath/log/console.log -e $apppath/log/err.log -a $apppath/agilenode/bin/start.js $apppath/

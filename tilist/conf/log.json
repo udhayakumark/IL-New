@@ -1,0 +1,9 @@
+{
+"critical": true,
+"error": true,
+"debug": true,
+"warn": false,
+"info": false,
+"store": "files",
+"filepath": "C://Myquu/NodeJS/projects/IL-New/tilist/log/tilist.log"
+}

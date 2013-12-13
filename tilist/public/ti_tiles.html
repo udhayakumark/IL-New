@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>
+      Interactive Life - tilist
+    </title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="/js/ti_tiles.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/ili.css">
+    <link rel="stylesheet" type="text/css" href="/css/ti_tiles.css">
+  </head>
+  <body>
+    <div class='page_container'>
+      <div class='page_header page_block'>
+	<img class='header_logo' src='/img/ili.png'/>
+	<div class='header_menu'>
+	  <button class='header_menu_btn'>Tiles</button>
+	  <button class='header_menu_btn'>Tilist</button>
+	  <button class='header_menu_btn'>Pages</button>
+	  <button class='header_menu_btn'>Organizations</button>
+	  <button class='header_menu_btn'>Users</button>
+	</div>
+      </div>
+      <div class='tiles_add page_block'>
+	<span class='label'>Add tile</span>
+	<button class='btn btn_content'>Content</button>
+	<button class='btn btn_url'>URL</button>
+      </div>
+      <div class='tiles_list page_block'>
+	<div class='tiles_list_search'>
+	  <input class='search_box text_box' type='text' placeholder='Search'></input>
+	</div>
+	<div class='tiles_list_show'>
+	</div>
+      </div>
+      <div class='page_block tiles_head tile_content tile_url'>
+	<div class='tile_form'>
+	  <span class='label tile_content'>Content Tile: </span>
+	  <span class='label tile_url'>URL Tile: </span>
+	  <input class='tile_title text_box' type='text' placeholder='Enter a title for this tile'></input>
+	  <select>
+	    <option >Tile category</option>
+	    <option value='video'>Video</option>
+	    <option value='prayer'>prayer</option>
+	  </select>
+	</div>
+	<div class='tile_art'>
+	  <button class='btn tile_art_btn'>Tile Art</button>
+	  <img class='tile_art_img' src='/img/tile_default.jpg' />
+	</div>
+	<div class='tile_form_btns'>
+	  <button class='btn save_tile_btn'>Save</button>
+	  <button class='btn close_tile_btn'>Close</button>
+	</div>
+	<div class='content_widget_btns tile_content'>
+	  <button class='btn widget_btn'>Text</button>
+	  <button class='btn widget_btn'>Video</button>
+	  <button class='btn widget_btn'>Image</button>
+	</div>
+      </div>
+      <div class='tile_blocks'>
+	<div class='tile_url url_block tile_block'>
+	  <input class='url_block_url' type='text' placeholder='Enter Url to be linked'></input>
+	  <div class='url_preview'>
+	  </div>
+	</div>
+	<div class='tile_content content_blocks'>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>

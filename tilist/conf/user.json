@@ -1,0 +1,5 @@
+{  
+"dbname": "tilist-users",
+"collections": { "orgmembers" : "orgmembers" },
+"views": { "test" : "userstest.html", "login" : "login.html", "sample" : "sample.html" }
+}

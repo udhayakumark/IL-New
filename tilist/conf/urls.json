@@ -1,0 +1,5 @@
+{  
+"dbname": "tilist-core",
+"collections": { "urls" : "urls" },
+"views": { "test" : "urltest.html" }
+}

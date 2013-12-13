@@ -1,0 +1,3 @@
+apppath=/apps/tilist
+
+forever stop $apppath/agilenode/bin/start.js
